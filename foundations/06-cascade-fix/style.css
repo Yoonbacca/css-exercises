@@ -1,23 +1,25 @@
 body{
-  font-family:Arial, Helvetica, sans-serif
+  font-family: sans-serif;
 }
 
-.para,
-.small-para {
+/*This is the parent that sets the size*/
+.para {
+  font-size: 22px;
+}
+
+.para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
+/*Small para inherits the color and weight (which is redundant)*/
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/*ID is more SPECIFIC than class*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,14 +31,16 @@ body{
   font-size: 20px;
 }
 
+/*Carent*/
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/*This is defined after .text, so it applies via RULE ORDER*/
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
