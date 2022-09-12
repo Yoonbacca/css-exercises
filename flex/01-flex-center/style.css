@@ -3,8 +3,14 @@
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  /*Declare this container a flex container*/
+  display: flex;
+  /*Center horizonally*/
+  justify-content: center;
+  /*Center vertically*/
+  align-items: center;
 }
-
+  /*The class, box, becomes a flex item due to display: flex*/
 .box {
   background: palevioletred;
   font-weight: bold;
@@ -12,4 +18,5 @@
   border: 6px solid maroon;
   width: 80px;
   height: 80px;
+
 }
